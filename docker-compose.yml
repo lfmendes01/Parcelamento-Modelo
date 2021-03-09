@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  parcelamentoapi:
+    image: ${DOCKER_REGISTRY-}parcelamentoapi
+    build:
+      context: .
+      dockerfile: ParcelamentoAPI\Dockerfile
